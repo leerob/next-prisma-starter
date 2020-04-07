@@ -1,0 +1,35 @@
+{
+  "name": "prisma-next-starter",
+  "description": "Starter project for Next.js + Prisma tutorial.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Lee Robinson",
+    "email": "me@leerob.io",
+    "url": "https://leerob.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leerob/prisma-next-starter.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "db": "prisma studio --experimental",
+    "db-save": "prisma migrate save --experimental",
+    "db-up": "prisma migrate up --experimental"
+  },
+  "dependencies": {
+    "@prisma/client": "2.0.0-beta.1",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@prisma/cli": "2.0.0-beta.1"
+  }
+}
