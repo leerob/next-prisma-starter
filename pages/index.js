@@ -1,7 +1,12 @@
 export async function getStaticProps() {
   return {
     props: {
-      songs: []
+      songs: [
+        {
+          id: 1,
+          name: 'Test Song'
+        }
+      ]
     }
   };
 }
@@ -9,7 +14,7 @@ export async function getStaticProps() {
 export default ({ songs }) => (
   <ul>
     {songs.map((song) => (
-      <li key={song.id} {...song} />
+      <li key={song.id}>{song.name}</li>
     ))}
   </ul>
 );
