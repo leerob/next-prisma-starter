@@ -19,13 +19,13 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "db": "prisma studio",
+    "db": "prisma studio --experimental",
     "db-save": "prisma migrate save",
     "db-up": "prisma migrate up",
     "update": "prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "2.1.0",
+    "@prisma/client": "2.1.1",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
