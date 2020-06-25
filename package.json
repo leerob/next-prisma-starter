@@ -20,9 +20,9 @@
     "build": "next build",
     "start": "next start",
     "db": "prisma studio --experimental",
-    "db-save": "prisma migrate save",
-    "db-up": "prisma migrate up",
-    "update": "prisma generate"
+    "db-save": "prisma migrate save --experimental",
+    "db-up": "prisma migrate up --experimental",
+    "generate": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "2.1.1",
